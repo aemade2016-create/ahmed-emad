@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #001F3F;
+    --sec-color: #00A6FB;
+}
+body {
+   font-family: "Roboto","Raleway", sans-serif;
+}
+.dis-inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.rel {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+nav {
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+nav img {
+    width: 175px;
+    padding-left: 5%;
+}
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    width: 50%;
+    text-align: center;
+    margin-left: 10%;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: white
+}
+li:hover{
+    text-decoration: underline;
+    color: white;
+}
+button {
+    margin-left: 10%;
+    width: 100px;
+    height: 35px;
+    background-color: var(--sec-color);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(0, 166, 251, 0.4);
+}
+.contanier-fluid {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.contanier {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.text-container {
+    top: 10%;
+    position: absolute;
+    width: 50%;
+    right: 30%;
+    color: white;
+}
+.text-container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.text-container p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.contanier {
+    width: 100%;
+    margin-top: 20%;
+}
+.image-head1 {
+    padding: 10px;
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.image-head2 {
+    padding: 10px;
+    position: absolute;
+    left: 418px;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+}
+.our-team {
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center; 
+    padding-bottom: 50px; 
+}
+.our-team h2 {
+    padding-top: 20px;
+    font-family: "Raleway", sans-serif ;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.card {
+    padding-top: 10px;
+    display: inline-block; 
+    vertical-align: top;
+    width: 30%;
+    height: 350px;
+    margin: 15px;
+    position: relative; 
+    border-radius: 10px;
+    background-color:#001B37;
+
+}
+.card img {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.p-haed {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    font-size: 11px;
+    color:white;
+    font-weight: bold;
+}
+
+.p {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    right: 20px; 
+    font-size: 14px;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.icon img {
+position: absolute;
+    left: 20px;
+    width: 80px;
+    margin: 0 5px;
+    top: 80%;
+}
+.icon-1 , .icon-2 , .icon-3 {
+    width: 20px;
+    margin: 0 5px;
+    padding: 0 5px;
+    top: 80%;
+}
+.about {
+    background-color: #BCD1E7;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.about h3 {
+    font-family: "Raleway", sans-serif;
+    padding-top: 5%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5%;
+    color: var(--main-color);
+    margin-left: 5%;
+}
+.about p {
+    width: 40%;
+    margin-left: 5%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.about img {
+position: absolute;
+    top: 12%;
+    right: 6%;
+    width: 34%;
+}
+.Our-experience {
+  position: relative;
+  width: 100%;
+  display: inline-block; 
+  height: auto;
+  background-color: var(--main-color);
+}
+
+.Our-experience img{
+    width: 60%;
+    margin: 5%;
+    object-fit: cover;
+
+} 
+
+.exp-text{
+    display: inline-block;
+    position: absolute;
+    background-color: #00A6FB;
+    width: 578px;
+    height: auto;
+    top: 17%;
+    right: 17rem;
+    padding: 1%;
+    overflow: hidden;
+}
+.exp-text h3 {
+  left:50px ;
+  top: 10px;
+  font-size: 36px;
+  padding: 20px ;
+  text-align:left;
+  color:white;
+}
+.exp-text p {
+    font-size: 20Px;
+    color: white;
+    margin: 1rem;
+}
+.exp-bot {
+    width: fit-content;
+    background-color: white;
+    color: var(--main-color);
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+}
