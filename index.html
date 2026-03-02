@@ -1,105 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Longboat Rönd</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/
->
-<link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
-        <nav class="dis-inline">
-            <img class="dis-inline" src="./img/logo.png" alt="Logo">
-            <ul class="dis-inline">
-                <li class="dis-inline"><a href="#">Home</a></li>
-                <li class="dis-inline"><a href="#">About</a></li>
-                <li class="dis-inline"><a href="#">Team</a></li>
-                <li class="dis-inline"><a href="#">Services</a></li>
-                <li class="dis-inline"><a href="#">Policies</a></li>
-            </ul>
-            <button>Contact</button>
-        </nav>
-        <section class="contanier-fluid">
-            <img src="./img/Rectangle 9.png" alt="contanier image">
-            <div class="text-container">
-            <h1>One-Stop Solution for All Your Shipping Needs</h1>
-            <p>Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the wider group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply and logistics team.</p>
-                   <div class="contanier">
-            <div class="image-head1"><img src="./img/Rectangle 11.png" alt="">
-            <p>Protective Security</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container fw-bold">
+            <a class="navbar-brand col-3 text-center p-0 m-0" href="#">
+                <h1 class="h5 fw-bold">LONGBOAT<span class="d-block fw-bold">ROND</span></h1>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" navbar-collapse  col-6" id="navbarNav">
+                <ul class="navbar-nav col-12 justify-content-around d-flex">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Policies</a></li>
+                </ul>
             </div>
-            <div class="image-head2">
-                <img src="./img/Rectangle 13.png" alt="">
-                <p>Protective Psychology</p>
+
+            <!-- Theme Toggle + Contact Button -->
+            <div class="d-flex align-items-center justify-content-end gap-3 col-3">
+                <!-- 🌙 Dark/Light Toggle -->
+                <div class="theme-toggle-wrapper">
+                    <i class="bi bi-sun-fill theme-icon sun"></i>
+                    <label class="theme-toggle" title="Toggle Dark/Light Mode">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="toggle-slider">
+                            <i class="bi bi-circle-fill"></i>
+                        </span>
+                    </label>
+                    <i class="bi bi-moon-fill theme-icon moon"></i>
+                </div>
+
+                <button class="btn-contact ">Contact</button>
             </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+                <div class="col-10 mx-5 text-center hero-text p-5 animate-on-scroll">
+                    <h2 class="mb-3">One-Stop Solution for All Your Shipping Needs</h2>
+                    <p class="mb-4">Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the wider
+                        group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply
+                        and logistics team.</p>
+                </div>
+                <div class="hero-badges d-flex justify-content-center">
+                    <div class="badge-item p-3 m-2 rounded-3 col-3">
+                        <img src="./img/Rectangle 11.png" alt="Security" class="col-12 rounded-3 object-fit-cover ">
+                        <p class="my-2 fw-bolder">Protective Security</p>
+                    </div>
+                    <div class="badge-item p-3 m-2 rounded-3 col-3">
+                        <img src="./img/Rectangle 13.png" alt="Psychology" class="col-12 rounded-3 object-fit-cover ">
+                        <p class="my-2 fw-bolder">Protective Psychology</p>
+                    </div>
+                </div>
+            
+
         </div>
-        <div class="our-team">
-            <h2>Our Team</h2>
-            <div class="card">
-                <img src="./img/Ellipse 17.png" alt="">
-                <h3>Dr Linda Wagener</h3>
-                <p class="p-haed">HEAD OF PROTECTIVE PSYCHOLOGY</p>
-                <p class="p">Linda has decades of experience in clinical psychology, with a particular focus on trauma management. Her expertise includes: mental functioning in hostile and extreme environments; gender security; critical incident staff care; and creating a positive work climate for all types of organisations.  
-                <div class="icon"><img src="./img/Vector.png" alt="social media icons">
-                    <img src="./img/Vector (1).png" alt="social media icons">
-                    <img src="./img/Vector (2).png" alt="social media icons">
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="text-center mb-4 h3 fw-bold">Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="team-card text-center text-md-start">
+                        <img src="./img/Ellipse 17.png" alt="Dr Linda Wagener" class="d-block mx-auto d-md-none">
+                        <div class="d-none d-md-flex align-items-center mb-3">
+                            <img src="./img/Ellipse 17.png" alt="Dr Linda Wagener" class="me-3">
+                            <div>
+                                <h3>Dr Linda Wagener</h3>
+                                <span class="position">HEAD OF PROTECTIVE PSYCHOLOGY</span>
+                            </div>
+                        </div>
+                        <p class="d-md-none">
+                            <strong>Dr Linda Wagener</strong><br>
+                            <span class="position d-inline">HEAD OF PROTECTIVE PSYCHOLOGY</span>
+                        </p>
+                        <p>Linda has decades of experience in clinical psychology, with a particular focus on trauma
+                            management. Her expertise includes: mental functioning in hostile and extreme environments;
+                            gender security; critical incident staff care; and creating a positive work climate for all
+                            types of organisations.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="team-card text-center text-md-start">
+                        <img src="./img/Ellipse 17 (2).png" alt="Jack Parnell" class="d-block mx-auto d-md-none">
+                        <div class="d-none d-md-flex align-items-center mb-3">
+                            <img src="./img/Ellipse 17 (2).png" alt="Jack Parnell" class="me-3">
+                            <div>
+                                <h3>Jack Parnell</h3>
+                                <span class="position">HEAD OF PROTECTIVE SECURITY</span>
+                            </div>
+                        </div>
+                        <p class="d-md-none">
+                            <strong>Jack Parnell</strong><br>
+                            <span class="position d-inline">HEAD OF PROTECTIVE SECURITY</span>
+                        </p>
+                        <p>Jack Parnell has been a security industry professional for over 30 years. He has an extensive
+                            background working on complicated emergencies globally in high-risk, conflict and
+                            post-conflict environments.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="team-card text-center text-md-start">
+                        <img src="./img/Ellipse 17 (1).png" alt="Marc Snailum" class="d-block mx-auto d-md-none">
+                        <div class="d-none d-md-flex align-items-center mb-3">
+                            <img src="./img/Ellipse 17 (1).png" alt="Marc Snailum" class="me-3">
+                            <div>
+                                <h3>Marc Snailum</h3>
+                                <span class="position">HEAD OF CYBER SECURITY</span>
+                            </div>
+                        </div>
+                        <p class="d-md-none">
+                            <strong>Marc Snailum</strong><br>
+                            <span class="position d-inline">HEAD OF CYBER SECURITY</span>
+                        </p>
+                        <p>Marc is an IT management professional with over 20 years of experience in designing,
+                            deploying and managing complex solutions.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-                </p>
-            </div>
-              <div class="card">
-                <img src="./img/Ellipse 17 (2).png" alt="">
-                <h3>Jack Parnell​​</h3>
-                <p class="p-haed">HEAD OF PROTECTIVE SECURITY</p>
-                <p class="p">Jack Parnell has been a security industry professional for over 30 years. He has an extensive background working on complicated emergencies globally in high-risk, conflict and post-conflict environments.
-                <div class="icon"><img class="icon-1" src="./img/Vector.png" alt="social media icons">
-                    <img class="icon-2" src="./img/Vector (1).png" alt="social media icons">
-                    <img class="icon-3" src="./img/Vector (2).png" alt="social media icons">
-            </div>
-                </p>
-            </div>
-              <div class="card">
-                <img src="./img/Ellipse 17 (1).png" alt="">
-                <h3>Marc Snailum</h3>
-                <p class="p-haed">HEAD OF CYBER SECURITY</p>
-                <p class="p">Marc is an IT management professional with over 20 years of experience in designing, deploying and managing complex solutions.  
-                <div class="icon"><img src="./img/Vector.png" alt="social media icons">
-                    <img src="./img/Vector (1).png" alt="social media icons">
-                    <img src="./img/Vector (2).png" alt="social media icons">
-            </div>
-                </p>
         </div>
-        </section>
-        <div class="about">
-            <h3>Who are we and what we do</h3>
-            <p>Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the wider group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply and logistics team.</p>
-            <img src="./img/brain.png" alt="">
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <h3>Who are we and what we do</h3>
+                    <p>Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the wider
+                        group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply
+                        and logistics team.</p>
+                </div>
+                <div class="col-lg-6 text-center animate-on-scroll" style="animation-delay: 0.2s">
+                    <img src="./img/brain.png" alt="About Us" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <section>
-<div class="Our-experience">
-        <div>
-          <img src="./img/unsplash_6anudmpILw4.png" alt="" />
-          <div class="exp-text">
-            <h3>Our Experience</h3>
-            <p>
-              LbR was created by highly experienced international security
-              experts and psychologists with decades of combined operational
-              service in the Governmental, Humanitarian and Private sectors.
-            </p>
-              <p>
-                With backgrounds in ensuring the physical and mental wellbeing
-                at the highest levels of government, royalty, Ultra-High Net
-                Worth families, humanitarians and international diplomats, as
-                well as global delegations and national sporting teams, the
-                multi-national team behind LbR has the breadth of experience to
-                address all your risk management needs
-              </p>
-              <button class="exp-bot">More on Our History</button>
-          </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4  animate-on-scroll">
+                    <img src="./img/unsplash_6anudmpILw4.png" alt="Our Experience" class="experience-img">
+                    <!-- <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s"> -->
+                    <div class="exp-overlay">
+                        <h3>Our Experience</h3>
+                        <p>LbR was created by highly experienced international security experts and psychologists with
+                            decades of combined operational service in the Governmental, Humanitarian and Private
+                            sectors.</p>
+                        <p>With backgrounds in ensuring the physical and mental wellbeing at the highest levels of
+                            government, royalty, Ultra-High Net Worth families, humanitarians and international
+                            diplomats, as well as global delegations and national sporting teams, the multi-national
+                            team behind LbR has the breadth of experience to address all your risk management needs.</p>
+                        <button class="btn-history">More on Our History</button>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme Toggle & Animations Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // ========== 🌙 Dark/Light Mode Toggle ==========
+            const themeToggle = document.getElementById('themeToggle');
+            const htmlElement = document.documentElement;
+
+            // Check for saved theme preference or respect OS preference
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeToggle.checked = true;
+            }
+
+            // Toggle theme on switch change
+            themeToggle.addEventListener('change', function () {
+                if (this.checked) {
+                    htmlElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    htmlElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+            // Listen for OS theme changes
+            prefersDarkScheme.addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    if (e.matches) {
+                        htmlElement.setAttribute('data-theme', 'dark');
+                        themeToggle.checked = true;
+                    } else {
+                        htmlElement.setAttribute('data-theme', 'light');
+                        themeToggle.checked = false;
+                    }
+                }
+            });
+
+            // ========== 🎬 Scroll Animations ==========
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            animateElements.forEach(el => observer.observe(el));
+
+            // ========== ⬆️ Scroll to Top Button ==========
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // ========== 🎯 Smooth Scroll for Nav Links ==========
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
