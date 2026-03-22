@@ -25,23 +25,20 @@
             <a class="navbar-brand col-3 text-center p-0 m-0" href="#">
                 <h1 class="h5 fw-bold">LONGBOAT<span class="d-block fw-bold">ROND</span></h1>
             </a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class=" navbar-collapse  col-6" id="navbarNav">
                 <ul class="navbar-nav col-12 justify-content-around d-flex">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Policies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href=".hero-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href=".team-section">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href=".about-section">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href=".contact-us">Contact us</a></li>
                 </ul>
             </div>
-
-            <!-- Theme Toggle + Contact Button -->
             <div class="d-flex align-items-center justify-content-end gap-3 col-3">
-                <!-- 🌙 Dark/Light Toggle -->
                 <div class="theme-toggle-wrapper">
                     <i class="bi bi-sun-fill theme-icon sun"></i>
                     <label class="theme-toggle" title="Toggle Dark/Light Mode">
@@ -53,7 +50,7 @@
                     <i class="bi bi-moon-fill theme-icon moon"></i>
                 </div>
 
-                <button class="btn-contact ">Contact</button>
+                <button class="btn btn-primary" style="box-shadow: var(--shadow);"><a href="#" class="text-light nav-link">Contact</a></button>
             </div>
         </div>
     </nav>
@@ -61,23 +58,24 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-                <div class="col-10 mx-5 text-center hero-text p-5 animate-on-scroll">
-                    <h2 class="mb-3">One-Stop Solution for All Your Shipping Needs</h2>
-                    <p class="mb-4">Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the wider
-                        group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply
-                        and logistics team.</p>
+            <div class="col-10 mx-5 text-center hero-text p-5 animate-on-scroll">
+                <h2 class="mb-3">One-Stop Solution for All Your Shipping Needs</h2>
+                <p class="mb-4">Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group Ltd. As part of the
+                    wider
+                    group, LbR also has access to the Norwegian registered Longboat Solutions (LbS) global supply
+                    and logistics team.</p>
+            </div>
+            <div class="hero-badges d-flex justify-content-center">
+                <div class="badge-item p-3 m-2 rounded-3 col-3">
+                    <img src="./img/Rectangle 11.png" alt="Security" class="col-12 rounded-3 object-fit-cover ">
+                    <p class="my-2 fw-bolder">Protective Security</p>
                 </div>
-                <div class="hero-badges d-flex justify-content-center">
-                    <div class="badge-item p-3 m-2 rounded-3 col-3">
-                        <img src="./img/Rectangle 11.png" alt="Security" class="col-12 rounded-3 object-fit-cover ">
-                        <p class="my-2 fw-bolder">Protective Security</p>
-                    </div>
-                    <div class="badge-item p-3 m-2 rounded-3 col-3">
-                        <img src="./img/Rectangle 13.png" alt="Psychology" class="col-12 rounded-3 object-fit-cover ">
-                        <p class="my-2 fw-bolder">Protective Psychology</p>
-                    </div>
+                <div class="badge-item p-3 m-2 rounded-3 col-3">
+                    <img src="./img/Rectangle 13.png" alt="Psychology" class="col-12 rounded-3 object-fit-cover ">
+                    <p class="my-2 fw-bolder">Protective Psychology</p>
                 </div>
-            
+            </div>
+
 
         </div>
     </section>
@@ -191,7 +189,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 mb-4  animate-on-scroll">
                     <img src="./img/unsplash_6anudmpILw4.png" alt="Our Experience" class="experience-img">
-                    <!-- <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s"> -->
                     <div class="exp-overlay">
                         <h3>Our Experience</h3>
                         <p>LbR was created by highly experienced international security experts and psychologists with
@@ -201,118 +198,246 @@
                             government, royalty, Ultra-High Net Worth families, humanitarians and international
                             diplomats, as well as global delegations and national sporting teams, the multi-national
                             team behind LbR has the breadth of experience to address all your risk management needs.</p>
-                        <button class="btn-history">More on Our History</button>
+                        <button class="btn btn-light">More on Our History</button>
                     </div>
                 </div>
-                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid text-light" style="background-color: #001F3F;">
+        <div class="container d-flex">
+            <div class="pro-text col-lg-5 py-5">
+                <h3 class="h1 col-10">Protective Psychology</h3>
+                <p class=" text-p">The Protective Psychology division of LbR provides a number of services, all with the
+                    goal of
+                    reducing the impact on
+                    both individuals and organisations, of working in high-stress environments.</p>
+                <ul class=" text-p">Specifically
+                    <li>Individual pre-employment/deployment psychological assessments and bespoke feedback;</li>
+                    <li>Bespoke individual or group resilience training;</li>
+                    <li>Psychological support to management teams during a crisis;</li>
+                    <li>Psychological support and debriefing to individuals subjected to trauma;</li>
+                    <li>Post kidnap reintegration.</li>
+                    <li>Insider threat identification</li>
+                </ul>
+            </div>
+            <div class="col-7 position-relative">
+                <div class="col-12 px-5"><img src="./img/Rectangle 5.png" alt="" class="my-5 w-75"
+                        style="margin-left:40%;"></div>
+                <div class="col-9 animate-on-scroll position-absolute" style="left: 20%;top: 40%;">
+                    <div class="team-card text-center text-md-start bg-light">
+                        <div class="d-flex">
+                            <div class="col-3 d-none d-md-flex align-items-center">
+                                <img src="./img/Ellipse 17.png" alt="Dr Linda Wagener" class="me-3">
+                            </div>
+                            <div>
+                                <h3 class="text-dark d-block col-12">Dr Linda Wagener</h3>
+                                <p class="col-12" style="color: var(--sec-color);">HEAD OF PROTECTIVE PSYCHOLOGY</p>
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-size: 12px;">Linda has decades of experience in clinical
+                            psychology, with a particular focus on trauma
+                            management. Her expertise includes: mental functioning in hostile and extreme environments;
+                            gender security; critical incident staff care; and creating a positive work climate for all
+                            types of organisations.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="container-fluid" style="background-color: white;">
+        <div class="container d-flex">
+            <div class="col-lg-4 py-5">
+                <h3 class="h1 text-primary-emphasis my-5">Cyber Security</h3>
+                <p class="text-p text-dark">The Cyber Security division undertakes detailed assessments and threat
+                    analysis for individuals or organisations alike.
+                    The interconnectivity, or Internet Of Things, makes our clients, and their families vulnerable to
+                    hostile actors at home
+                    as much as in the work place. Our goal is to create solutions that provide an appropriate level of
+                    security with the
+                    minimum level of impact. As with all elements of security, this needs to be done in a way that makes
+                    it as harmonious to
+                    daily life as possible.</p>
+            </div>
+            <div class="col-7 position-relative">
+                <div class="col-12 px-5"><img src="./img/Rectangle 6.png" alt="" class="my-5 w-75"
+                        style="margin-left:40%;"></div>
+                <div class="col-9 animate-on-scroll position-absolute" style="left: 20%;top: 40%;">
+                    <div class="team-card text-center text-md-start bg-light col-12">
+                        <div class="d-flex">
+                            <div class="col-3 d-none d-md-flex align-items-center">
+                                <img src="./img/Ellipse 17 (1).png" alt="Dr Linda Wagener" class="me-3">
+                            </div>
+                            <div class="col-9">
+                                <h3 class="text-primary-emphasis d-block col-12">Dr Linda Wagener</h3>
+                                <p class="col-12" style="color: var(--sec-color);">HEAD OF PROTECTIVE PSYCHOLOGY</p>
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-size: 12px;">Marc is an IT management professional with over 20
+                            years of experience in designing,
+                            deploying and managing complex solutions.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="container-fluid text-light" style="background-color: #001F3F;">
+        <div class="container d-flex">
+            <div class="pro-text col-lg-5 py-5">
+                <h3 class="h1 col-10 my-3">Protective Security</h3>
+                <p class=" text-p my-3">The Protective Security division provides a broad spectrum of services to our
+                    existing and new clients.</p>
+                <ul class=" text-p my-3">These include:
+                    <li>Security reviews and assessments;</li>
+                    <li>Provision of Close Protection personnel;</li>
+                    <li>Crisis Management consultation and training.</li>
+                </ul>
+                <p class=" text-p my-3">LbR only deploys experienced, certified and trusted staff with backgrounds from
+                    Tier 1 national
+                    security teams.</p>
+            </div>
+            <div class="col-7 position-relative">
+                <div class="col-12 px-5"><img src="./img/Rectangle 7.png" alt="" class="my-3 w-50"
+                        style="margin-left:40%;">
+                </div>
+                <div class="col-lg-9 animate-on-scroll position-absolute col-12" style="left: 15%;top: 30%;">
+                    <div class="team-card text-center text-md-start bg-light">
+                        <div class="d-flex">
+                            <div class="col-3 d-none d-md-flex align-items-center">
+                                <img src="./img/Ellipse 18.png" alt="Dr Linda Wagener" class="me-3">
+                            </div>
+                            <div>
+                                <h3 class="text-dark d-block col-12">Dr Linda Wagener</h3>
+                                <p class="col-12" style="color: var(--sec-color);">HEAD OF PROTECTIVE PSYCHOLOGY</p>
+                            </div>
+                        </div>
+                        <p class="text-dark" style="font-size: 10px;">Lee Johnson is a highly experienced personal
+                            security professional having worked at the highest levels of the
+                            government, private and commercial sectors. As a team leader in Scotland Yard’s Special
+                            Branch and latterly Royalty and
+                            Specialist Protection Command, Lee led on delivering medium and large-scale delegation
+                            security operations for UK
+                            interests overseas such as the British Olympic Association, Paralympic and Commonwealth
+                            Teams for the events in Beijing,
+                            Vancouver, Sochi, Melbourne and Delhi.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="container-fluid" style="background-color: var(--main-color);">
+        <div class="container d-flex">
+            <div class="col-lg-5">
+                <div class="my-5 px-3" style="border-left: 2px solid rgb(0, 122, 245);">
+                    <h3 class="" style="color: rgb(0, 122, 245);">Testimonials</h3>
+                    <p class="h3" style="color: var(--text-color);">What people say about us</p>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1 rounded-circle" href="#carouselExampleIndicators2" role="button"
+                        data-slide="prev">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3 rounded-circle" href="#carouselExampleIndicators2" role="button"
+                        data-slide="next">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class=" my-4">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row ">
+                                <div class=" col-6 mb-3">
+                                    <div class="team-card " style="background-color: #F2C110;">
+                                        <img class="img-fluid" alt="100%x280" src="./img/Ellipse 98.png">
+                                        <div class="card-body">
+                                            <p class="card-text text-black">“Lorem ipsum dolor sit amet consectetur.
+                                                Tincidunt
+                                                adipiscing sed turpis quam. Nec habitant orci lorem feugiat ut
+                                                fermentum amet semper. Pretium nunc viverra elit in. Velit amet
+                                                adipiscing purus arcu ut viverra amet scelerisque.”</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-warning bg-dark my-3">Paul at
+                                            Trustpilot</button>
+                                    </div>
+                                </div>
+                                <div class=" col-6 mb-3">
+                                    <div class="team-card" style="background-color: #F44900;">
+                                        <img class="img-fluid" alt="100%x280" src="./img/Ellipse 98 (1).png">
+                                        <div class="card-body">
+                                            <p class="card-text text-black">“Lorem ipsum dolor sit amet consectetur.
+                                                Tincidunt
+                                                adipiscing sed turpis quam. Nec habitant orci lorem feugiat ut
+                                                fermentum amet semper. Pretium nunc viverra elit in. Velit amet
+                                                adipiscing purus arcu ut viverra amet scelerisque.”</p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-danger bg-dark my-3">Bill Miller at
+                                            Trustpilot</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Scroll to Top Button -->
+    <section class="container-fluid" style="background-color: var(--light-bg);">
+        <div class="container d-flex py-4">
+            <div class="col-lg-6 text-center animate-on-scroll d-sm-none d-lg-block" style="animation-delay: 0.2s">
+                <img src="./img/email-53sYuBGNx6.png" alt="email" class="img-fluid">
+            </div>
+            <div class="col-lg-6  text-end animate-on-scroll" style="animation-delay: 0.2s">
+                <div class="px-3  mt-5" style="border-right: 2px solid rgb(0, 122, 245);">
+                    <h3 class="" style="color: rgb(0, 122, 245);">Email us</h3>
+                </div>
+                <p class="h1" style="color: #001F3F;">Any questions? Write or call us. We will write back within 24 hour
+                </p>
+                <form action="">
+                    <input type="text" class="form-control mt-3" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <input type="email" class="form-control mt-3" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                    <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message"></textarea>
+                    <button class="btn btn-primary mt-4 w-100" style="box-shadow: var(--shadow);"
+                        type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="bi bi-arrow-up"></i>
     </button>
-
-    <!-- Bootstrap JS Bundle -->
+    <section class="container-fluid contact-us" style="background-color: var(--main-color);">
+        <div class="container d-flex">
+            <div class="col-lg-4">
+                <img src="./img/image 1.png" alt="logo" class="my-5">
+                <p class="col-6" style="color:var(--text-color);">61 Bridge Street, Kington, United Kingdom, HR5 3DJ</p>
+            </div>
+            <div class="col-lg-4">
+                <h4 class="my-5 mb-2 fw-bold" style="color: var(--text-color);">Join Our Team</h4>
+                <i class="bi bi-envelope" style="color: var(--text-color);"> <span class="ms-2">recruitment@longboat-rond.com</span></i>
+                <p class="m-3" style="color:var(--text-color);">Privacy policy</p>
+                <p class="m-3" style="color:var(--text-color);">Cookies</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h4 class="fw-bold m-5" style="color: var(--text-color);">Contact us</h4>
+                <i class="bi bi-twitter me-3" style="color: var(--text-color);"></i>
+                <i class="bi bi-linkedin me-3" style="color: var(--text-color);"></i>
+                <i class="bi bi-facebook me-3" style="color: var(--text-color);"></i>
+                <i class="bi bi-instagram me-3" style="color: var(--text-color);"></i>
+                <p style="color: var(--text-color);" class="my-2"><i class="bi bi-telephone-fill"></i><span class="ms-2">01123245614</span></p>
+                <p style="color: var(--text-color);" class="my-2"><i class="bi bi-envelope-at-fill"></i> <span class="ms-2">aemade2017@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <p style="color: var(--text-color);">© 2023 Longboat Rönd all right reserved</p>
+        </div>
+    </section>
+    <script src="./mian.js"></script>
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Theme Toggle & Animations Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // ========== 🌙 Dark/Light Mode Toggle ==========
-            const themeToggle = document.getElementById('themeToggle');
-            const htmlElement = document.documentElement;
-
-            // Check for saved theme preference or respect OS preference
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-                htmlElement.setAttribute('data-theme', 'dark');
-                themeToggle.checked = true;
-            }
-
-            // Toggle theme on switch change
-            themeToggle.addEventListener('change', function () {
-                if (this.checked) {
-                    htmlElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    htmlElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                }
-            });
-
-            // Listen for OS theme changes
-            prefersDarkScheme.addEventListener('change', (e) => {
-                if (!localStorage.getItem('theme')) {
-                    if (e.matches) {
-                        htmlElement.setAttribute('data-theme', 'dark');
-                        themeToggle.checked = true;
-                    } else {
-                        htmlElement.setAttribute('data-theme', 'light');
-                        themeToggle.checked = false;
-                    }
-                }
-            });
-
-            // ========== 🎬 Scroll Animations ==========
-            const animateElements = document.querySelectorAll('.animate-on-scroll');
-
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-
-            animateElements.forEach(el => observer.observe(el));
-
-            // ========== ⬆️ Scroll to Top Button ==========
-            const scrollToTopBtn = document.getElementById('scrollToTop');
-
-            window.addEventListener('scroll', function () {
-                if (window.pageYOffset > 300) {
-                    scrollToTopBtn.classList.add('visible');
-                } else {
-                    scrollToTopBtn.classList.remove('visible');
-                }
-            });
-
-            scrollToTopBtn.addEventListener('click', function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-
-            // ========== 🎯 Smooth Scroll for Nav Links ==========
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
